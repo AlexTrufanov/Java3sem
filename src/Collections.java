@@ -2,10 +2,10 @@ import java.util.*;
 
 public class Collections {
     public static void main(String[] args) {
-        System.out.println(create100());
+        System.out.println(createList100());
     }
 
-    public static List<Integer> create100() {
+    public static List<Integer> createList100() {
         List<Integer> num = new ArrayList<>();
         for (int i = 1; i <= 100; i++)
             num.add(i);
@@ -19,7 +19,7 @@ public class Collections {
     }
 
 
-    public static void printListWithIndices(List<String> a) {
+    public static void printListIndex(List<String> a) {
         int i = 1;
         System.out.println("Элементов в списке: " + a.size());
         for (String element : a) {
@@ -43,7 +43,7 @@ public class Collections {
         return res;
     }
 
-    public static void reverseListInPlace(List<String> a) {
+    public static void replaceList(List<String> a) {
         for (int i = a.size() - 1; i >= 0; i--) {
             a.add(a.get(i));
             a.remove(i);
